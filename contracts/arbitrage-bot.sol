@@ -83,9 +83,9 @@ contract Arbitrage {
 		token.transfer(msg.sender, token.balanceOf(address(this)));
 	}
 
-   function () payable external {
+ //  function () payable external {}dir
 
-   }
+   
 
 
       
