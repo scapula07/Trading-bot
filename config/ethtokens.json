@@ -1,0 +1,18 @@
+{
+  
+  "ropsten":[
+    { "symbol":"DAI","address":"0xaD6D458402F60fD3Bd25163575031ACDce07538D" ,"count":0},
+    {  "symbol":"USDC","address":"0xFE724a829fdF12F7012365dB98730EEe33742ea2", "count":1},
+    { "symbol":"WETH" ,"address":"0xc778417E063141139Fce010982780140Aa0cD5Ab", "count":2}
+  ],
+     
+ "mainnet":[
+       {"symbol":"DAI", "address":"0x6B175474E89094C44Da98b954EedeAC495271d0F","count":0},  
+       {  "symbol":"USDC", "address":"0xFE724a829fdF12F7012365dB98730EEe33742ea2","count":1},
+       { "symbol":"WETH" ,"address":"0xc778417E063141139Fce010982780140Aa0cD5Ab","count":2}
+       
+       
+     ]
+     
+     }
+

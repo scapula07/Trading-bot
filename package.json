@@ -7,12 +7,44 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot-scripts/arbitrage-bot-script",
+    "dev": "nodemon bot-scripts/arbitrage-bot-script",
+    "dev:server": "nodemon server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@apollo/client": "^3.5.10",
+    "@sushiswap/sdk": "^5.0.0-canary.116",
+    "@sushiswap/sushi-data": "^0.0.9",
+    "@truffle/hdwallet-provider": "^2.0.4",
+    "@uniswap/sdk": "^3.0.3",
+    "@uniswap/sdk-core": "^3.0.1",
     "@uniswap/v2-core": "^1.0.1",
-    "@uniswap/v2-periphery": "^1.1.0-beta.0"
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "@uniswap/v3-core": "^1.0.1",
+    "@uniswap/v3-periphery": "^1.4.0",
+    "@uniswap/v3-sdk": "^3.8.2",
+    "axios": "^0.26.1",
+    "bcrypt": "^5.0.1",
+    "big.js": "^6.1.1",
+    "bignumber.js": "^9.0.2",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "ethers": "^5.6.3",
+    "express": "^4.17.3",
+    "graphql": "^16.3.0",
+    "graphql-request": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "moralis": "^1.5.9",
+    "morgan": "^1.10.0",
+    "nedb": "^1.8.0",
+    "node-fetch": "^3.2.3",
+    "p-queue": "^7.2.0",
+    "web3": "^1.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }

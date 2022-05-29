@@ -1,0 +1,120 @@
+
+const fs = require("fs");
+const path =require("path")
+
+
+const ARB_contract=require("../build/contracts/ArbitrageBot.json")
+const erc20min=require("../build/contracts/IERC20Minimal.json")
+
+
+
+
+app.get("/", (req,res) =>{
+    res.send("Arbitrage Bot")
+}
+
+)
+
+//const res=await contract.methods.getBalance("0xaD6D458402F60fD3Bd25163575031ACDce07538D").call({from:"0xFac9478614ceEA5fEA43EA92f3273b82fb4cE85D"})
+   //console.log(res)
+
+const web3 = new Web3(https_provider)
+const contract_address =process.env.ARB_CONTRACT_ADDRESS
+const contract = new web3.eth.Contract(
+ ARB_contract.abi,
+ contract_address
+)
+
+  //sushiswap=await sushiPrice("0x6B175474E89094C44Da98b954EedeAC495271d0F")
+ // uniswap=await uniPrice("0x6B175474E89094C44Da98b954EedeAC495271d0F")
+ 
+
+
+
+let currentlyTrading ;
+
+
+ const res = await web3.eth.getGasPrice()
+ //    const gasPrice=Web3.utils.fromWei(res, 'ether')
+ //  console.log(gasPrice)
+const trade= async( )=>{
+
+
+    currentlyTrading? currentlyTrading=false : ""
+
+    currentlyTrading = true
+     setTimeout(()=>{
+         currentlyTrading=false
+     },45000
+     )
+
+    
+ 
+  try {
+   // const res=await contract.methods.getBalance("0xaD6D458402F60fD3Bd25163575031ACDce07538D").call({from:"0xFac9478614ceEA5fEA43EA92f3273b82fb4cE85D"})
+   // console.log(res)
+  }
+   catch(e){
+     console.log(e)
+   }
+ 
+
+  //const data =await contract.methods.recoverTokens("0xaD6D458402F60fD3Bd25163575031ACDce07538D").send({
+   //    from:"0xFac9478614ceEA5fEA43EA92f3273b82fb4cE85D"
+   // })
+    //console.log(data)
+  // const res=await contract.methods.getAmountOutMin("0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506",
+   //"0xaD6D458402F60fD3Bd25163575031ACDce07538D","0xc778417E063141139Fce010982780140Aa0cD5Ab",
+  // "333000000000000").call()
+  // console.log(res)
+  // web3.eth.getBalance("0xFac9478614ceEA5fEA43EA92f3273b82fb4cE85D") .then(console.log)
+
+  
+  //const daiTokenContractAddress = "0xaD6D458402F60fD3Bd25163575031ACDce07538D"
+
+  //const daiTokenContract = new web3.eth.Contract(
+   //   erc20min.abi, 
+   // daiTokenContractAddress)
+ // const approveData = await daiTokenContract.methods.approve(contract_address,  "333000000000000").send({
+ //   from:"0xFac9478614ceEA5fEA43EA92f3273b82fb4cE85D"
+ // })
+   
+ // console.log(approveData)
+
+  //const res=await contract.methods. dualDexTrade("0xaD6D458402F60fD3Bd25163575031ACDce07538D","0xc778417E063141139Fce010982780140Aa0cD5Ab",333000000000000).send({
+  //    from:"0xFac9478614ceEA5fEA43EA92f3273b82fb4cE85D"
+//  })
+ // console.log(res)
+
+    
+}
+trade()
+
+
+const config =path.join(__dirname,"config","Ropsten.json")
+
+//console.log(`Loaded ${config.routers.length} routes`);
+app.listen(PORT, ()=> console.log(`Running on ${PORT}`) )
+const wss_provider = new HDWalletProvider(
+        private_key,
+       wss_Url
+   )
+
+//const wss_provider = new HDWalletProvider(
+//    private_key,
+//    wss_Url
+//)
+const EthProvider =new ethers.providers.JsonRpcProvider("https://mainnet.infura.io/v3/a8b73843608e46a0b065b328bd7249fe")
+const network="ropsten"
+const http_Url=process.env.INFURA_HTTP
+const wss_Url=process.env.INFURA_WSS
+const private_key =process.env.private_key
+
+const ethProvider = ethers.getDefaultProvider(network, {
+    etherscan: process.env.ETHERSCAN_API_KEY,
+     infura: {
+      projectId: process.env.PROJECT_ID,
+      projectSecret: process.env.PROJECT_SECRET,
+     },
+
+});
