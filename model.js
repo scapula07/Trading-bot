@@ -1,4 +1,5 @@
-const Datastore = require('nedb')
 
-module.exports.userDB = new Datastore({ filename: "database/user.db",autoload: true });
-module.exports.refreshTokensDB =new Datastore({ filename: "database/refreshtoken.db",autoload: true });
+const PouchDB = require('pouchdb') ;
+PouchDB.plugin(require('pouchdb-find'));
+module.exports.userdb = new PouchDB('users');
+module.exports.refreshTokendb = new PouchDB('refreshtokens');

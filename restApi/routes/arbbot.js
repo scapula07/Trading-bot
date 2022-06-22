@@ -75,4 +75,9 @@ router.route("/config")
     
     res.send({
          publicAddress :req.body.publicAddress,
-         privateKey:req.
+         privateKey:req.body.privateKey
+       })
+   })
+  
+
+module.exports=router
