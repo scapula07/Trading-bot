@@ -1,7 +1,6 @@
 
 
 const Web3 = require("web3")
-const ARB_contract=require("../build/contracts/ArbitrageBot.json")
 const erc20min=require("../build/contracts/IERC20Minimal.json")
 const HDWalletProvider =require("@truffle/hdwallet-provider")
 
